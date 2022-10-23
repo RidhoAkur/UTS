@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap 5 - Transparent Navbar</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <style>
+            .banner-image {
+                background-image: url('image/B-home.webp');
+                background-size: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar  -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/image1658819707.webp" alt="" width="50" height="80"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="Home.HTML">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="jadwal.HTML">Jadwal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="hasilpertandingan.HTML">Hasil Pertandingan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Klasemen.HTML">Klasemen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Galeri.HTML">Galeri</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Image  -->
+        <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="content text-center">
+                <h1 class="text-white fw-5">BRI Liga 1 Indonesia</h1>
+            </div>
+        </div>
+
+        <h1 class="text-center mb-5 mt-5 p-1 bg-primary text-white fw-5">Berita Terbaru</h1>
+
+        <!-- Main Content Area -->
+        <section id="about" class="about-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-image">
+                            <img src="image/Berita1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2>Persik Kediri Memberikan bantuan Kepada Korban Tragedi Kanjuruhan</h2>
+                            <a href="#" class="btn btn-primary">Baca</a>
+                        </div>
+                    </div>
+                    <hr class="mt-5 mb-4">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-image">
+                            <img src="image/Berita2.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2>Bali United Lakukan Tiga Penyesuaian di Program Latihan Tim</h2>
+                            <a href="#" class="btn btn-primary">Baca</a>
+                        </div>
+                    </div>
+                    <hr class="mt-5 mb-4">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-image">
+                            <img src="image/Berita3.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2>Tim Pelatih Persija Siapkan Program Latihan di Rumah</h2>
+                            <a href="#" class="btn btn-primary">Baca</a>
+                        </div>
+                    </div>
+                    <hr class="mt-5 mb-4">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-image">
+                            <img src="image/Berita4.jpeg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text">
+                            <h2>Telan Kekalahan Kedua, Fabio Lefundes Akui Timnya Kurang Maksimal</h2>
+                            <a href="#" class="btn btn-primary">Baca</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            var nav = document.querySelector('nav');
+
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 100) {
+                    nav.classList.add('bg-dark', 'shadow');
+                } else {
+                    nav.classList.remove('bg-dark', 'shadow');
+                }
+            });
+        </script>
+        <p class="bg-dark text-white text-center p-2 mt-5">© 2022 Liga Indonesia Baru . All Rights Reserved</p>
+    </body>
+</html>
